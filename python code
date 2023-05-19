@@ -1,0 +1,11 @@
+import pyttsx3 #pip install pyttsx3
+from time import sleep
+
+engine = pyttsx3.init() #activating the pyttsx3 module 
+
+def say(text):#creating def function
+    engine.say(text) #using say function of pytttsx3 to say the word
+    engine.runAndWait()#waiting gor next command
+
+say("")#type what you have to say
+sleep(0.5)# delay
